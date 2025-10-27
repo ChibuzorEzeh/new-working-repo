@@ -1215,7 +1215,10 @@ body{
 .new-hello li:first-child{
   border-top: none;
 }
-
+button:active{
+  transition: .5s ease all;
+  transform: scale(.98);
+}
 .nsc{
   width: 100%;
   font-weight: bold;
