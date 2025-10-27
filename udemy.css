@@ -1356,7 +1356,7 @@ button:active{
   .accelerators{
     width: 100%;
   }
-  .sponsors-list,{
+  .sponsors-list{
     overflow: auto;
   }
   #sect-2-btn{

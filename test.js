@@ -1,19 +1,32 @@
-// write a function that takes an array of strings and converts their length property to numbers, returning the same array ;
+const customers = [
+  {firstName: "Michael",
+    lastName: "Storen",
+    age: 32,
+    height: 171 + `cm`,
+    sex: "M"
+  },
 
-const isPalindrome = (str) => { 
-  return str.split(``).join(``) === str.split(``).reverse().join(``);
-} ;
+  {firstName: "Sarah",
+    lastName: "Mckenzie",
+    age: 24,
+    height: 122 + `cm`,
+    sex: "F"
+  },
 
-console.log (isPalindrome(`racecar`)) ;
-console.log (`bean`.split(``).reverse()) ;
+  {firstName: "Thomas",
+    lastName: "Brady",
+    age: 35,
+    height: 160 + "cm",
+    sex: "M"
+  }
+] ; 
+console.log (...customers) ; 
 
-const numberRep = (arr) => {
-  return arr.map((index) => {
-    return index.charCodeAt();
-  });
-};
+ function addAge (arr) {
+  return arr.map (cust =>  ({
+    ...cust,
+    fullName: `${cust.firstName} ${cust.lastName}`
+  }))
+} ; 
 
-console.log(numberRep([`r`, `a`])); 
-
-console.log () ;
-console.log (`welldone`) 
+console.log (addAge(customers)) ;
