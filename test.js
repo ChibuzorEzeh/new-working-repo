@@ -16,4 +16,4 @@ const numberRep = (arr) => {
 console.log(numberRep([`r`, `a`])); 
 
 console.log () ;
-console.log (`welldone`) ;
+console.log (`welldone`) 

@@ -1,0 +1,90 @@
+body{
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+}
+ label{
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, rgb(151, 151, 151), white);
+
+}
+#compDiv{
+    margin-top: 20px;
+}
+#playerDiv{
+    margin-top: 50px;
+}
+#playerbtn{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+#playerbtn button {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: 900;
+    color: white;
+    background: linear-gradient(45deg, black, white);
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
+    rotate: 5deg;
+}
+
+#playerbtn button:hover{
+    transform: translateY(1.5px);
+    background: linear-gradient(45deg, rgb(32, 32, 32), rgb(206, 206, 206));
+    animation-name: bounceAnim;
+}
+
+#pointToYou{
+    border: 2px solid black;
+    position: absolute;
+    position: fixed;
+    right: 550px;
+    animation: bounceAnim 1s infinite ;
+    box-shadow: 3px 6px 5px;
+    display: none;
+    font-family: cursive;
+    background: linear-gradient(45deg, rgb(49, 48, 48), rgb(177, 176, 176));
+    color: white;
+}
+#pointToYou1{
+    display: none;
+    border: 2px solid black;
+    position: absolute;
+    position: fixed;
+    right: 550px;
+    animation: bounceAnim 1s infinite ;
+    box-shadow: 3px 6px 5px;
+    font-family: cursive;
+    background: linear-gradient(45deg, rgb(49, 48, 48), rgb(177, 176, 176));
+    color: white;
+}
+#pointToYou2{
+    display: none;
+    border: 2px solid black;
+    position: absolute;
+    position: fixed;
+    right: 550px;
+    animation: bounceAnim 1s infinite ;
+    box-shadow: 3px 6px 5px;
+    font-family: cursive;
+    background: linear-gradient(45deg, rgb(49, 48, 48), rgb(177, 176, 176));
+    color: white;
+}
+@keyframes bounceAnim{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+};
+
